@@ -1,0 +1,132 @@
+:root {
+  --primary: #382c2c;
+  --secondary: #fcaf17;
+  --border: #e08216;
+  --border1: #ebebeb;
+}
+
+.d {
+  margin: 0rem;
+}
+
+.head {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+.head::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: #cccccc;
+  width: 100%;
+  height: 1px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#hrgeelx,
+#hrgmlx {
+  margin: 1rem 3rem;
+}
+
+#hrg,
+#wel {
+  width: 100%;
+}
+
+#hrg::before,
+#wel::before {
+  left: 0%;
+  transform: translateX(0%);
+  width: 50%;
+  height: 3px;
+}
+
+#wel {
+  font-size: 1.5rem;
+}
+
+#wel {
+  margin-left: 0px;
+}
+
+#wel::before {
+  transform: translateX(0%);
+  width: 25%;
+}
+
+.ab_con {
+  overflow: auto;
+}
+
+.ab_con p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.bd_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px var(--border) solid;
+  border-radius: 7px;
+  background-color: white;
+  margin: 1rem 2rem;
+  padding: 1rem 3rem;
+}
+
+.bd img {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-0.5deg);
+  border-radius: 50%;
+  border: 2px var(--border) solid;
+  object-fit: cover;
+}
+
+.bd p {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.d ul {
+  text-align: left;
+  padding: 1rem 4rem;
+}
+
+.chm {
+  display: block;
+  text-align: left;
+  padding: 0rem 4rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .bd_con {
+    flex-direction: column;
+  }
+
+  .d ul {
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+
+  #hrgeelx,
+  #hrgmlx {
+    margin: 1rem 1.5rem;
+  }
+
+  .chm {
+    text-align: left;
+    padding: 0rem 1rem;
+  }
+}
